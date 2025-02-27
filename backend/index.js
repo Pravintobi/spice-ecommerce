@@ -19,7 +19,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin : "*"  // allowed all request
+    origin : 'https://rad-paprenjak-ec7dc6.netlify.app'  // allowed all request
     }));
 app.use(express.json());
 app.use(approutes);
