@@ -10,7 +10,7 @@ export function Login() {
   const handleLogin = async (formData) => {
     try {
       // Send login request to the backend
-      const response = await axios.post('http://localhost:8000/Login/loginuser', formData);
+      const response = await axios.post('https://spice-ecommerce-2.onrender.com/Login/loginuser', formData);
       console.log('Login response:', response.data);
 
       toast.success('Login successful!');

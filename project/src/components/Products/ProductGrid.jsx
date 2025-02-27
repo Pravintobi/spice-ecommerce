@@ -14,7 +14,7 @@ export function ProductGrid() {
     const fetchProducts = async () => {
       try {
 
-        const response = await axios.get('http://localhost:8000/productdetails/getAllProduct');
+        const response = await axios.get('https://spice-ecommerce-2.onrender.com/productdetails/getAllProduct');
 
 
         const formattedProducts = response.data.map(product => ({

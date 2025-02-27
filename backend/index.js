@@ -19,8 +19,8 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin:'https://jazzy-capybara-6a5c50.netlify.app',credentials:true
-}));
+    origin : "*"  // allowed all request
+    }));
 app.use(express.json());
 app.use(approutes);
 

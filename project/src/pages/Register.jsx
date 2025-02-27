@@ -9,7 +9,7 @@ export function Register() {
 
   const handleRegister = async (formData) => {
     try {
-      const response = await axios.post('http://localhost:8000/Login/createuser', formData);
+      const response = await axios.post('https://spice-ecommerce-2.onrender.com/Login/createuser', formData);
       console.log('Register response:', response.data);
       toast.success('Registration successful!');
       navigate('/login');
