@@ -9,7 +9,7 @@ export function useProducts() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('https://e-commerce-7-q350.onrender.com/productdetails/getAllProduct');
+        const response = await axios.get('http://localhost:8000/productdetails/getAllProduct');
         setProducts(response.data);
       } catch (err) {
         setError(err.message || 'Failed to fetch products');
