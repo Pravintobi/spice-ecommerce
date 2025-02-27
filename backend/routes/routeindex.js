@@ -8,13 +8,7 @@ import Order from './order&wishlist.js'
 
 const router = Expres.Router()
 
-const corsOptions = {
-    origin: 'http://localhost:5173', // Replace with your frontend's URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-  };
-  
-  router.use(cors(corsOptions));
+
 
 router.use('/productdetails', productroute)
 router.use('/Review',ProductReview)

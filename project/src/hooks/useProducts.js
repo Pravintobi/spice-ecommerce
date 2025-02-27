@@ -9,7 +9,7 @@ export function useProducts() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('https://spice-ecommerce-2.onrender.com/productdetails/getAllProduct');
+        const response = await axios.get('https://spice-ecommerce-3.onrender.com/productdetails/getAllProduct');
         setProducts(response.data);
       } catch (err) {
         setError(err.message || 'Failed to fetch products');
